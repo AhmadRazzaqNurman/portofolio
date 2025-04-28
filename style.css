@@ -1,0 +1,184 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f8fc;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo a {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #3b82f6;
+}
+
+/* Home */
+header {
+    background: linear-gradient(to right, #eef2f7, #f4f8fc);
+    padding: 80px 0;
+}
+
+.home-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.home-text h1 span {
+    color: #3b82f6;
+}
+
+.home-text h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.home-text p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.btn-primary {
+    background: #3b82f6;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.home-image img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Section */
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.grey-section {
+    background: #e7eff6;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.section p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.experience-item h3 {
+    font-size: 24px;
+    color: #3b82f6;
+    margin-bottom: 10px;
+}
+
+.experience-item ul {
+    padding-left: 20px;
+}
+
+.experience-item ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: #aaa;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .home-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
